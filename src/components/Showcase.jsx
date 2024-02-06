@@ -22,11 +22,11 @@ const Showcase = () => {
                          <Heading as="h1" size="h1" top="0.5rem" bottom="1rem">
                               I'm <BlueText>Anukeerth Ek</BlueText>
                          </Heading>
-                         <Heading as="h3" size="h3">
+                         <Heading as="h2" size="h2">
                             I'm a <BlueText>Frontend Developer</BlueText>
                          </Heading>
 
-                         <ParaText as="p" top="2rem" bottom="4rem">
+                         <ParaText as="p" top="1rem" bottom="4rem">
                          I'm a highly skilled Frontend Developer with a passion for crafting dynamic and engaging user interfaces. With a proven track record of creating visually stunning and responsive designs.
                          </ParaText>
 
@@ -61,7 +61,7 @@ const Showcase = () => {
                         </ShowcaseImageCard>
 
 
-                        <Particle 
+                        {/* <Particle 
                                    as={motion.img}
                                    animate={{
                                         x: [0, 100, 0],
@@ -112,7 +112,7 @@ const Showcase = () => {
                               bottom="10px"
                               left="-70px"
                               rotate= "50deg"
-                        />
+                        /> */}
 
 
                       </ShowcaseParticleContainer>

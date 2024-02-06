@@ -1,5 +1,5 @@
 import { FaReact, FaCss3Alt, FaHtml5, FaBootstrap, FaSass, FaJava} from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
+import { SiTailwindcss, SiTypescript } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import project1 from '../assets/E-commerce.png';
 import project2 from '../assets/Blog-App.png';
@@ -14,39 +14,44 @@ export const Skills = [
     },
     {
         id: 1,
+        tech: 'TYPESCRIPT',
+        icon: <SiTypescript/>
+    },
+    {
+        id: 2,
         tech: 'JAVASCRIPT',
         icon: <IoLogoJavascript/>
     },
     {
-        id: 2,
+        id: 3,
         tech: 'CSS',
         icon: <FaCss3Alt/>
     },
     {
-        id: 3,
+        id: 4,
         tech: 'HTML',
         icon: <FaHtml5/>
     },
     {
-        id: 4,
+        id: 5,
         tech: 'SCSS',
         icon: <FaSass/>
     },
     {
-        id: 5,
+        id: 6,
         tech: 'BOOTSTRAP',
         icon: <FaBootstrap/>
     },
     {
-        id: 6,
+        id: 7,
         tech: 'TAILWIND CSS',
         icon: <SiTailwindcss/>
     },
-    {
-        id: 7,
-        tech: 'JAVA',
-        icon: <FaJava/>
-    },
+    // {
+    //     id: 7,
+    //     tech: 'JAVA',
+    //     icon: <FaJava/>
+    // },
 ]
 
 export const projectDetails = [

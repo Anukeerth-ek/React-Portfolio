@@ -39,7 +39,13 @@ const Project = ({data}) => {
             <ParaText top="1.5rem" bottom="2rem">
                     {data.project_desc}
             </ParaText>
-            <Button>Visit Website</Button>
+          
+
+
+            <Button >Visit Website</Button>
+            <Button >View Source Code</Button>
+
+      
         </motion.div>
 
         {/* RIGHT SECTION PROJECT-IMAGE */}

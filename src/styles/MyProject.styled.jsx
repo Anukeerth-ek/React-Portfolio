@@ -11,6 +11,7 @@ export const TechStackCard = styled.div`
         margin-left: 1rem;
     }
 `
+
 export const ProjectImageContainer = styled.div`
     display: flex;
     justify-content: ${({justify})=> justify}

@@ -1,14 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {motion} from 'framer-motion'
 // IMGPORTING GLOBAL STYLES HERE
 import { PaddingContainer, Heading, FlexContainer, ParaText, IconContainer, Button } from '../../styles/Global.styles'
 import { FaGithub } from 'react-icons/fa'
 import { TechStackCard, ProjectImage } from '../../styles/MyProject.styled'
-import Project1 from '../../assets/E-commerce.png'
 import { ProjectImageContainer } from '../../styles/MyProject.styled'
 import { fadeInLeftVariant, fadeInRightVariant } from '../../utils/Variants'
 
 const Project = ({data}) => {
+
+  const [showSourceCode, setShowSourceCode] = useState(false)
+
+  const [showLiveLink, setShowLiveLink] = useState(false)
+  const handleSourceCode = ()=> {
+   setShowSourceCode(true)
+   window.open(data. source_code, '_blank');
+  }
+
+  const handleSiteRedirect = ()=> {
+    setShowLiveLink(true)
+    window.open(data.live_link, '_blank')
+  }
  
   return (
     <FlexContainer
@@ -39,7 +51,8 @@ const Project = ({data}) => {
             <ParaText top="1.5rem" bottom="2rem">
                     {data.project_desc}
             </ParaText>
-            <Button>Visit Website</Button>
+           <Button onClick={()=> handleSourceCode()}>View Source Code</Button>
+           <Button onClick={()=> handleSiteRedirect()}>Visit Website</Button>
         </motion.div>
 
         {/* RIGHT SECTION PROJECT-IMAGE */}

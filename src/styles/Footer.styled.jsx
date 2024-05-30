@@ -7,6 +7,7 @@ export const ContactForm = styled.form`
         margin: auto;
     }
 `
+
 export const FormLabel = styled.p`
     color: ${({theme})=> theme.colors.para_text_color};
     padding-bottom: 10px;
@@ -23,5 +24,8 @@ export const FormInput = styled.input`
 
     &::placeholder {
         color: ${({theme})=> theme.colors.para_text_color};
+    }
+    &:focus {
+        background-color: ${({theme})=> theme.colors.white}
     }
 `

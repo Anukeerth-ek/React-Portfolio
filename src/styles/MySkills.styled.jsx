@@ -11,7 +11,6 @@ export const SkillsCardContainer = styled.div`
         padding: 0;
     }
 `
-
 export const SkillsCard = styled.div`
     width: 170px;
     border: 1px solid #fff;
@@ -20,8 +19,15 @@ export const SkillsCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: ${({theme})=> theme.colors.primary_light};
 
+    &:hover {
+        transform: scale(1.2);
+        transition: all 0.4s ease;
+        cursor: pointer
+    }
+
+    background-color: ${({theme})=> theme.colors.primary_light};
+   
     @media(max-width: ${({theme})=> theme.breakpoints.mobile}) {
         width: 100%;
         margin-top: 2rem

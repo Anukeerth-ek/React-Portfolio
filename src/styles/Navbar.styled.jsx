@@ -18,9 +18,9 @@ export const Logo = styled.p`
 `
 export const MenuIcon = styled.a`
     color: ${({theme})=> theme.colors.secondary};
-    font-size: 1.6rem;
+    font-size: 2rem;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     display: flex;
     align-items: center
 `

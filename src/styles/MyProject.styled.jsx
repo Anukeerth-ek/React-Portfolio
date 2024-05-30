@@ -26,7 +26,7 @@ export const ProjectImage = styled.img`
         width: 100%;
         height: 250px;
         margin-top: 2rem;
-        object-fit: fill;
+        object-fit: contain;
         
     }
 
